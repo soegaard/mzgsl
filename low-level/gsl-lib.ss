@@ -56,5 +56,5 @@
              try-paths)
       gsllibname))
 
-(define libgslcblas (ffi-lib cblaslibpath))
+(define libgslcblas (ffi-lib cblaslibpath #:global? #t))
 (define libgsl (ffi-lib gsllibpath))
